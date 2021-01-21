@@ -1,0 +1,17 @@
+import numpy as np
+/載入 numpy
+np.__version__
+/檢查版本
+b = np.arange(0,21,1)
+/宣告陣列b (起始值,最大值,公差)
+print(b)
+
+b = np.delete(b,0)
+/刪除陣列b第一個值(陣列,第幾個值)
+print(b)
+b1 = (b % 2 == 0)
+/找出陣列中除以2餘數為0的值
+print(b[b1])
+b2 = (b % 3 == 0)
+/找出陣列中除以3餘數為0的值
+print(b[b2])
